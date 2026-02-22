@@ -1,0 +1,11 @@
+idf_component_register(
+    SRCS
+        "web_server.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        log
+        esp_http_server
+    PRIV_REQUIRES
+        data_types
+)

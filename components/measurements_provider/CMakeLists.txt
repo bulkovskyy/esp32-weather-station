@@ -1,0 +1,11 @@
+idf_component_register(
+    SRCS
+        "measurements_provider.c"
+        "sensor_data_provider.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        log
+    PRIV_REQUIRES
+        data_types
+)

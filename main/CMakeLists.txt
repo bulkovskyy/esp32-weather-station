@@ -1,2 +1,13 @@
-idf_component_register(SRCS "main.c"
-                    INCLUDE_DIRS ".")
+idf_component_register(
+    SRCS
+        "main.c"
+    REQUIRES
+        log
+    PRIV_REQUIRES
+        data_types
+        wifi_connector
+        web_server
+        measurements_provider
+    INCLUDE_DIRS
+        "."
+)

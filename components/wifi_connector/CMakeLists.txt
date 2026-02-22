@@ -1,0 +1,11 @@
+idf_component_register(
+    SRCS
+        "wifi_connector.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        log
+        nvs_flash
+        esp_netif
+        esp_wifi
+)
